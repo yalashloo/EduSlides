@@ -42,6 +42,33 @@ fastqc assays/rnaseq/dataset/ ...
 *FAIR: Findable, Accessible, Interoperable, Reusable
 </div>
 
+---
+layout: default
+---
+
+## The many Rs that the R in FAIR<sup>1</sup> could stand for (in workflow context)
+ 
+- Replicable
+- Reproducible
+- Reliable
+- Referable
+- Routine
+- Rapid
+- Robust
+- Reconfigurable
+
+<v-click>
+
+- **Reusable**
+
+<Footnotes>
+  <Footnote :number=1>
+   FAIR = Findable | Accessible | Interoperable | Reusable
+  </Footnote>
+</Footnotes>
+
+</v-click>
+
 
 ---
 

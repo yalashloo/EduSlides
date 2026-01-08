@@ -2,49 +2,6 @@
 title: Workflows Design
 author: Dominik Brilhaus
 license: CC-BY 4.0
----
-
-## R- und S-Sätze
-
-„Risiko- und Sicherheitssätze“
-(English: risk and safety)
-
-<div style="display:flex; gap:1rem; flex-wrap:nowrap; align-items:center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hazard_E.svg/60px-Hazard_E.svg.png" alt="Hazard E" width="60" height="60" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Hazard_F.svg/60px-Hazard_F.svg.png" alt="Hazard F" width="60" height="60" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Hazard_X.svg/60px-Hazard_X.svg.png" alt="Hazard X" width="60" height="60" />
-</div>
-
-*Nowadays replaced by the hazard (H-) and precautionary (P-) statements*
-
----
-layout: default
----
-
-## The many Rs that the R in FAIR<sup>1</sup> could stand for (in workflow context)
- 
-- Replicable
-- Reproducible
-- Reliable
-- Referable
-- Routine
-- Rapid
-- Robust
-- Reconfigurable
-
-<v-click>
-
-- **Reusable**
-
-<Footnotes>
-  <Footnote :number=1>
-   FAIR = Findable | Accessible | Interoperable | Reusable
-  </Footnote>
-</Footnotes>
-
-</v-click>
-
----
 layout: two-columns
 ---
 
@@ -1092,25 +1049,23 @@ https://git.nfdi4plants.org/brilator/Facultative-CAM-in-Talinum/-/blob/main/work
 layout: default
 ---
 
-## SciWIn – Scientific Workflow Infrastructure
+## SciWIn – Tool to convert existing scripts into CWL
 
-https://github.com/fairagro/m4.4_sciwin_client
+SciWIn = Scientific Workflow Infrastructure
 
-<img src="../assets/Poster_DataDays_JensKrumsieck.png" alt="SciWIn Poster" width="500"/>
+"With a lightweight command-line interface, SciWIn captures tool execution metadata, links workflow steps..."
 
-<Footnotes>
-  <Footnote>
-  Adapted from: Krumsieck, J., Leidel, A., Stiensmeier, X., & von Waldow, H. (2025). FAIR, fast, and frictionless – <br> computational workflows with SciWIn. Data Days Niedersachsen 2025, Braunschweig. Zenodo. https://doi.org/10.5281/zenodo.17651648
+- Tool on GitHub: https://github.com/fairagro/m4.4_sciwin_client
 
-  </Footnote>
-</Footnotes>
+- Poster on Zenodo: Krumsieck, J., Leidel, A., Stiensmeier, X., & von Waldow, H. (2025). FAIR, fast, and frictionless computational workflows with SciWIn. Data Days Niedersachsen 2025, Braunschweig. Zenodo. https://doi.org/10.5281/zenodo.17651648
+
+
 
 ---
 layout: default
 ---
 
 ## **Sustain** – Share and maintain your workflow (step)
-
 
 - Provide docs and examples
 - Use version control 

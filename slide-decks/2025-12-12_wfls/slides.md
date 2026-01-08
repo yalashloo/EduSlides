@@ -1,7 +1,7 @@
 ---
 date: 2025-12-12
-# theme: ../../themes/hhu-ceplas
-theme: ../../themes/dataplant-ceplas
+theme: ../../themes/hhu-ceplas
+# theme: ../../themes/dataplant-ceplas
 themeConfig:
   paginationX: l
   paginationY: b
@@ -25,7 +25,7 @@ src: './bricks/01-goals.md'
 ---
 
 ---
-src: ./bricks/workflows-intro.md#1,4
+src: ./bricks/workflows-intro.md#1,3,4
 ---
 
 ---
@@ -42,7 +42,7 @@ src: ./bricks/workflows-execute-remote.md
 ---
 
 ---
-src: './bricks/04-summary.md'
+src: './bricks/workflows-summary.md'
 ---
 
 ---
