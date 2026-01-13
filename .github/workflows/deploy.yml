@@ -40,6 +40,9 @@ jobs:
       
       - name: Build Deck3
         run: npm run build:deck3 -- --base /${{github.event.repository.name}}/deck3
+      
+      - name: Build Deck4
+        run: npm run build:deck4 -- --base /${{github.event.repository.name}}/deck4
 
       - uses: actions/configure-pages@v4
 

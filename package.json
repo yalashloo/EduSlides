@@ -8,6 +8,7 @@
     "build:deck1": "slidev build --out ../../dist/deck1 slide-decks/2025-11-19_intro-rdm/slides.md",
     "build:deck2": "slidev build --out ../../dist/deck2 slide-decks/2025-12-04_arc/slides.md",
     "build:deck3": "slidev build --out ../../dist/deck3 slide-decks/2025-12-12_wfls/slides.md",
+    "build:deck4": "slidev build --out ../../dist/deck4 slide-decks/2026-01-14_cwl-handsOn/slides.md",
     "runLocal:deck3": "slidev --open slide-decks/2025-12-12_wfls/slides.md",
     "runLocal:deck4": "slidev --open slide-decks/2026-01-14_cwl-handsOn/slides.md"    
   },
