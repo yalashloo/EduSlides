@@ -1,5 +1,5 @@
 ---
-title: Execute Workflows
+title: workflows-execute-galaxy
 author: Dominik Brilhaus
 license: CC-BY 4.0
 date: 2025-12-12
@@ -40,15 +40,3 @@ https://usegalaxy.eu/workflows/list_published
  - example workflow figure
   - and corresponding .ga file
  -->
-
----
-layout: default
----
-
-## The Cloud-based Workflow Manager (CloWM /klaʊm/)
-
-![alt text](../assets/clowm-screenshot.png)
-
-https://clowm.bi.denbi.de
-
-Workflows: https://clowm.bi.denbi.de/workflows

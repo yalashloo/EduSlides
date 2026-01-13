@@ -1,8 +1,11 @@
 ---
+title: workflows-5S-method-06-summary
+author: Dominik Brilhaus
+license: CC-BY 4.0
 layout: two-columns
 ---
 
-# Summary: 5S for Bioinformatic Workflows
+# Summary: 5S for Computational Workflows
 
 ::left::
 
