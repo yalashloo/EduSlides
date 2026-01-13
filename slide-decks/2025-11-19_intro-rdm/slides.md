@@ -10,7 +10,6 @@ fonts:
   sans: Gulim
 canvasWidth: 1200
 title: Intro to RDM
-transition: slide-left
 favicon: https://raw.githubusercontent.com/nfdi4plants/Branding/refs/heads/master/icons/DataPLANT/favicons/favicon_bg_darkblue.png
 drawings:
   enabled: true
