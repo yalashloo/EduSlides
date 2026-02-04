@@ -12,7 +12,7 @@ export default [
     date: "2026-01-14",
     url: dev
       ? "http://localhost:3033"
-      : repo + "/2026-01-14_cwl-handsOn/"
+      : "//2026-01-14_cwl-handsOn/"
   },
   {
     id: "2025-12-12_wfls",
@@ -22,7 +22,7 @@ export default [
     date: "2025-12-12",
     url: dev
       ? "http://localhost:3032"
-      : repo + "/2025-12-12_wfls/"
+      : "//2025-12-12_wfls/"
   },
   {
     id: "2025-12-04_arc",
@@ -32,7 +32,7 @@ export default [
     date: "2025-12-04",
     url: dev
       ? "http://localhost:3031"
-      : repo + "/2025-12-04_arc/"
+      : "//2025-12-04_arc/"
   },
   {
     id: "2025-11-19_intro-rdm",
@@ -42,6 +42,6 @@ export default [
     date: "2025-11-19",
     url: dev
       ? "http://localhost:3030"
-      : repo + "/2025-11-19_intro-rdm/"
+      : "//2025-11-19_intro-rdm/"
   }
 ]

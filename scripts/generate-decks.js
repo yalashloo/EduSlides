@@ -7,9 +7,10 @@ const OUTPUT = path.join(ROOT, 'app/src/decks.js')
 
 const BASE_PORT = 3030
 
-const repo = process.env.GITHUB_REPOSITORY
-  ? '/' + process.env.GITHUB_REPOSITORY.split('/')[1]
+const repoName = process.env.GITHUB_REPOSITORY
+  ? process.env.GITHUB_REPOSITORY.split('/')[1]
   : ''
+
 
 
 // ----------------- Helpers -----------------
@@ -89,7 +90,7 @@ ${withPorts
     date: "${d.date}",
     url: dev
       ? "http://localhost:${d.port}"
-      : repo + "/${d.id}/"
+      : "/${repoName}/${d.id}/"
   }`
   )
   .join(',\n')}
