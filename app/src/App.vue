@@ -22,8 +22,8 @@ import decks from './decks'
         </div>
 
         <div class="meta">
-          <span class="author">{{ deck.author }}</span>
-          <span class="date">{{ deck.date }}</span>
+          <span>{{ deck.author }}</span>
+          <span>{{ deck.date }}</span>
         </div>
       </a>
     </div>
@@ -126,12 +126,4 @@ import decks from './decks'
   padding-top: 0.8rem;
 }
 
-.author {
-  font-weight: 500;
-}
-
-.date {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", monospace;
-}
 </style>

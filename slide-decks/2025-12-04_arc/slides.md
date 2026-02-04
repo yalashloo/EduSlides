@@ -8,6 +8,7 @@ themeConfig:
 date: 2025-12-04
 coverDate: December 04th, 2025
 title: Intro to ARC
+description: Introducing the Annotated Research Context (ARC)
 fonts:
   sans: Gulim
 canvasWidth: 1200

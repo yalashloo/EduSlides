@@ -2,7 +2,7 @@
 date: 2026-01-14
 theme: ../../themes/hhu-ceplas
 title: CWL Demo
-description: CWL Demo
+description: Small hands-on demo to introduce wrapping a tool as CWL
 # theme: ../../themes/dataplant-ceplas
 themeConfig:
   paginationX: l

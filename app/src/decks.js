@@ -7,7 +7,7 @@ export default [
   {
     id: "2026-01-14_cwl-handsOn",
     title: "CWL Demo",
-    description: "CWL Demo",
+    description: "Small hands-on demo to introduce wrapping a tool as CWL",
     author: "Dominik Brilhaus",
     date: "2026-01-14",
     url: dev
@@ -17,7 +17,7 @@ export default [
   {
     id: "2025-12-12_wfls",
     title: "Computational Workflows",
-    description: "",
+    description: "Introduction to computational workflows; towards FAIRifying scripts.",
     author: "Dominik Brilhaus",
     date: "2025-12-12",
     url: dev
@@ -27,7 +27,7 @@ export default [
   {
     id: "2025-12-04_arc",
     title: "Intro to ARC",
-    description: "",
+    description: "Introducing the Annotated Research Context (ARC)",
     author: "Dominik Brilhaus",
     date: "2025-12-04",
     url: dev
