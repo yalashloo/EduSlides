@@ -7,6 +7,11 @@ const OUTPUT = path.join(ROOT, 'app/src/decks.js')
 
 const BASE_PORT = 3030
 
+const repo = process.env.GITHUB_REPOSITORY
+  ? '/' + process.env.GITHUB_REPOSITORY.split('/')[1]
+  : ''
+
+
 // ----------------- Helpers -----------------
 
 function parseFrontmatter(md) {
@@ -84,12 +89,13 @@ ${withPorts
     date: "${d.date}",
     url: dev
       ? "http://localhost:${d.port}"
-      : "/${d.id}/"
+      : repo + "/${d.id}/"
   }`
   )
   .join(',\n')}
 ]
 `
+
 
 fs.writeFileSync(OUTPUT, output)
 console.log(`Generated ${withPorts.length} decks (stable ports, sorted by date)`)

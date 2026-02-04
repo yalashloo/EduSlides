@@ -5,6 +5,11 @@ import { spawnSync } from 'child_process'
 const ROOT = process.cwd()
 const DECKS_DIR = path.join(ROOT, 'slide-decks')
 
+const repo = process.env.GITHUB_REPOSITORY
+  ? '/' + process.env.GITHUB_REPOSITORY.split('/')[1]
+  : ''
+
+
 const isDeck = name =>
   fs.existsSync(path.join(DECKS_DIR, name, 'slides.md'))
 
@@ -17,7 +22,7 @@ for (const deck of decks) {
   console.log(`Building ${deck}`)
   spawnSync(
     'npx',
-    ['slidev', 'build', '--base', `/${deck}/`],
+    ['slidev', 'build', '--base', `${repo}/${deck}/`],
     {
       cwd: path.join(DECKS_DIR, deck),
       stdio: 'inherit',
