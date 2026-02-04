@@ -5,7 +5,7 @@ import decks from './decks'
 <template>
   <main class="container">
     <header class="header">
-      <h1>Slides Gallery</h1>
+      <h1>Slide Deck Gallery</h1>
       <p class="subtitle">Browse and open available slide decks</p>
     </header>
 
@@ -27,6 +27,21 @@ import decks from './decks'
         </div>
       </a>
     </div>
+
+    <div class="footer">
+    <h2>Source Repositories</h2>
+      <ul>
+        <li>
+          EduSlides:
+          <a href="https://github.com/EduBricksHub/EduSlides">https://github.com/EduBricksHub/EduSlides</a>
+        </li>
+        <li>
+          These slide-decks source EduBricks and EduPaths from:
+          <a href="https://github.com/EduBricksHub/EduBricks-EduPaths">https://github.com/EduBricksHub/EduBricks-EduPaths</a>
+        </li>
+      </ul>
+    </div>
+
   </main>
 </template>
 
@@ -49,6 +64,10 @@ import decks from './decks'
   font-size: 2.4rem;
   margin: 0;
 }
+
+.footer {
+  text-align: left
+};
 
 .subtitle {
   opacity: 0.6;
