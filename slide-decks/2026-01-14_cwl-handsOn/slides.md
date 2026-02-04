@@ -1,6 +1,8 @@
 ---
 date: 2026-01-14
 theme: ../../themes/hhu-ceplas
+title: CWL Demo
+description: CWL Demo
 # theme: ../../themes/dataplant-ceplas
 themeConfig:
   paginationX: l
