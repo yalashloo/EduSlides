@@ -5,47 +5,43 @@ const dev = import.meta.env.DEV
 
 export default [
   {
-    id: "2025-11-19_intro-rdm",
-    title: "2025-11-19_intro-rdm",
-    description: "Slidev presentation",
-    thumbnail: dev
-      ? "http://localhost:3030/__slidev__/preview.png"
-      : "/2025-11-19_intro-rdm/preview.png",
+    id: "2026-01-14_cwl-handsOn",
+    title: "CWL Demo",
+    description: "CWL Demo",
+    author: "Dominik Brilhaus",
+    date: "2026-01-14",
     url: dev
-      ? "http://localhost:3030"
-      : "/2025-11-19_intro-rdm/"
-  },
-  {
-    id: "2025-12-04_arc",
-    title: "2025-12-04_arc",
-    description: "Slidev presentation",
-    thumbnail: dev
-      ? "http://localhost:3031/__slidev__/preview.png"
-      : "/2025-12-04_arc/preview.png",
-    url: dev
-      ? "http://localhost:3031"
-      : "/2025-12-04_arc/"
+      ? "http://localhost:3033"
+      : "/2026-01-14_cwl-handsOn/"
   },
   {
     id: "2025-12-12_wfls",
-    title: "2025-12-12_wfls",
-    description: "Slidev presentation",
-    thumbnail: dev
-      ? "http://localhost:3032/__slidev__/preview.png"
-      : "/2025-12-12_wfls/preview.png",
+    title: "Computational Workflows",
+    description: "",
+    author: "Dominik Brilhaus",
+    date: "2025-12-12",
     url: dev
       ? "http://localhost:3032"
       : "/2025-12-12_wfls/"
   },
   {
-    id: "2026-01-14_cwl-handsOn",
-    title: "2026-01-14_cwl-handsOn",
-    description: "Slidev presentation",
-    thumbnail: dev
-      ? "http://localhost:3033/__slidev__/preview.png"
-      : "/2026-01-14_cwl-handsOn/preview.png",
+    id: "2025-12-04_arc",
+    title: "Intro to ARC",
+    description: "",
+    author: "Dominik Brilhaus",
+    date: "2025-12-04",
     url: dev
-      ? "http://localhost:3033"
-      : "/2026-01-14_cwl-handsOn/"
+      ? "http://localhost:3031"
+      : "/2025-12-04_arc/"
+  },
+  {
+    id: "2025-11-19_intro-rdm",
+    title: "Intro to RDM",
+    description: "",
+    author: "Dominik Brilhaus",
+    date: "2025-11-19",
+    url: dev
+      ? "http://localhost:3030"
+      : "/2025-11-19_intro-rdm/"
   }
 ]

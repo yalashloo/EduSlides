@@ -1,90 +1,118 @@
 <script setup>
 import decks from './decks'
-import { ref } from 'vue'
-
-const active = ref(null)
 </script>
 
 <template>
   <main class="container">
-    <h1>EduSlides Gallery</h1>
+    <header class="header">
+      <h1>Slides Gallery</h1>
+      <p class="subtitle">Browse and open available slide decks</p>
+    </header>
 
     <div class="grid">
-      <div
+      <a
         v-for="deck in decks"
         :key="deck.id"
+        :href="deck.url"
         class="card"
-        @click="active = deck"
       >
-        <img :src="deck.thumbnail" />
-        <h2>{{ deck.title }}</h2>
-        <p>{{ deck.description }}</p>
-      </div>
-    </div>
+        <div class="card-body">
+          <h2>{{ deck.title }}</h2>
+          <p>{{ deck.description }}</p>
+        </div>
 
-    <div v-if="active" class="modal" @click.self="active = null">
-      <iframe
-        :src="active.url"
-        class="deck-frame"
-        sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-popups"
-        referrerpolicy="no-referrer"
-      />
+        <div class="meta">
+          <span class="author">{{ deck.author }}</span>
+          <span class="date">{{ deck.date }}</span>
+        </div>
+      </a>
     </div>
   </main>
 </template>
 
 <style>
+/* Layout */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
-  padding: 2rem;
-  font-family: system-ui;
+  padding: 3rem 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Header */
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.subtitle {
+  opacity: 0.6;
+  margin-top: 0.4rem;
+}
+
+/* Responsive grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
+/* Card */
 .card {
-  cursor: pointer;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  transition: transform .2s;
-  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(180deg, #ffffff, #fafafa);
+  border-radius: 16px;
+  padding: 1.6rem 1.6rem 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 180px;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
 }
 
-.card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+/* Content */
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem;
+  line-height: 1.3;
 }
 
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.8);
+.card p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+/* Metadata */
+.meta {
   display: flex;
-  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+  font-size: 0.8rem;
+  opacity: 0.65;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 0.8rem;
 }
 
-.modal iframe {
-  flex: 1;
-  border-radius: 12px;
-  background: white;
+.author {
+  font-weight: 500;
 }
 
-.deck-frame {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background: white;
+.date {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
 }
-
 </style>

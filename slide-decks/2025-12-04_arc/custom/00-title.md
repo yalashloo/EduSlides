@@ -5,7 +5,6 @@ author:
     github: https://github.com/brilator
     orcid: https://orcid.org/0000-0001-9021-3197
 layout: cover
-title: Intro to ARC
 ---
 
 # Intro to ARC
