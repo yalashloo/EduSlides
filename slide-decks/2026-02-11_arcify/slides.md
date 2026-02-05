@@ -26,9 +26,49 @@ layout: cover
 Dominik Brilhaus, CEPLAS Data
 
 ---
-src: '../../EduBricks-EduPaths/EduBricks/002-annotated-research-context.md'
+src: '../../EduBricks-EduPaths/EduBricks/rdm-fair.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/nfdi.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/ceplas/ceplas-dataplant.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/dataplant/dataplant-resources.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/002-annotated-research-context.md'
 ---
 
 ---
 src: '../../EduBricks-EduPaths/EduPaths/arc-overview.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/001-arc-standards.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/dataplant/datahub-plantdatahub.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/ceplas/datahub-onpremise-hhu.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/017-arc-ecosystem.md'
+---
+
+---
+src: './custom/acknowledgements.md'
+---
+
+---
+src: './custom/goals.md'
 ---

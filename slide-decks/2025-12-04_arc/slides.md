@@ -21,7 +21,7 @@ src: './custom/00-title.md'
 ---
 
 ---
-src: '../../EduBricks-EduPaths/EduBricks/002-annotated-research-context.md'
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/002-annotated-research-context.md'
 ---
 
 ---
