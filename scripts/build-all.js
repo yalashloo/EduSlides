@@ -8,13 +8,11 @@ const DIST = path.join(ROOT, 'dist')
 
 const repoName = process.env.GITHUB_REPOSITORY
   ? process.env.GITHUB_REPOSITORY.split('/')[1]
-  : ''
+  : null
 
 fs.mkdirSync(DIST, { recursive: true })
 
-const decks = fs.readdirSync(DECKS_DIR)
-
-for (const deck of decks) {
+for (const deck of fs.readdirSync(DECKS_DIR)) {
   const deckDir = path.join(DECKS_DIR, deck)
   const slides = path.join(deckDir, 'slides.md')
 
@@ -23,7 +21,9 @@ for (const deck of decks) {
     continue
   }
 
-  const base = `/${repoName}/${deck}/`   // ← THIS WAS THE BUG
+  const base = repoName
+    ? `/${repoName}/${deck}/`
+    : `/${deck}/`
 
   console.log(`Building ${deck} with base ${base}`)
 
