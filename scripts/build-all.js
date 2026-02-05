@@ -18,14 +18,14 @@ for (const deck of decks) {
   const deckDir = path.join(DECKS_DIR, deck)
   const slides = path.join(deckDir, 'slides.md')
 
-  const base = `${repoName}/${deck}/`
-
   if (!fs.existsSync(slides)) {
     console.log(`Skipping ${deck} (no slides.md)`)
     continue
   }
 
-  console.log(`Building ${deck}`)
+  const base = `/${repoName}/${deck}/`   // ← THIS WAS THE BUG
+
+  console.log(`Building ${deck} with base ${base}`)
 
   spawnSync(
     'npx',
@@ -43,5 +43,4 @@ for (const deck of decks) {
       shell: true,
     }
   )
-
 }
