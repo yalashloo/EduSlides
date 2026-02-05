@@ -33,8 +33,7 @@ jobs:
         run: node scripts/generate-decks.js
 
       - name: Build Slidev decks
-        run: |
-          node scripts/build-all.js
+        run: node scripts/build-all.js
 
       - name: Build Vue gallery
         run: |
@@ -43,9 +42,8 @@ jobs:
           npm run build
           cd ..
 
-      - name: Prepare Pages artifact
+      - name: Merge gallery into Pages dist
         run: |
-          mkdir -p dist
           cp -r app/dist/* dist/
 
       - uses: actions/configure-pages@v4
