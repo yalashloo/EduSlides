@@ -10,8 +10,6 @@ const repoName = process.env.GITHUB_REPOSITORY
   ? process.env.GITHUB_REPOSITORY.split('/')[1]
   : ''
 
-const basePath = repoName ? `/${repoName}` : ''
-
 fs.mkdirSync(DIST, { recursive: true })
 
 const decks = fs.readdirSync(DECKS_DIR)
@@ -19,6 +17,8 @@ const decks = fs.readdirSync(DECKS_DIR)
 for (const deck of decks) {
   const deckDir = path.join(DECKS_DIR, deck)
   const slides = path.join(deckDir, 'slides.md')
+
+  const base = `${repoName}/${deck}/`
 
   if (!fs.existsSync(slides)) {
     console.log(`Skipping ${deck} (no slides.md)`)
@@ -33,14 +33,15 @@ for (const deck of decks) {
       'slidev',
       'build',
       '--base',
-      `${basePath}/${deck}/`,
+      base,
       '--out',
-      path.join(DIST, deck)
+      path.join(DIST, deck),
     ],
     {
       cwd: deckDir,
       stdio: 'inherit',
-      shell: true
+      shell: true,
     }
   )
+
 }
