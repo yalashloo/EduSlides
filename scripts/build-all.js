@@ -1,30 +1,35 @@
+import { spawnSync } from 'child_process'
 import fs from 'fs'
 import path from 'path'
-import { spawnSync } from 'child_process'
 
 const ROOT = process.cwd()
 const DECKS_DIR = path.join(ROOT, 'slide-decks')
+const DIST = path.join(ROOT, 'dist')
 
-const repo = process.env.GITHUB_REPOSITORY
-  ? '/' + process.env.GITHUB_REPOSITORY.split('/')[1]
+const repoName = process.env.GITHUB_REPOSITORY
+  ? process.env.GITHUB_REPOSITORY.split('/')[1]
   : ''
 
+const basePath = repoName ? `/${repoName}` : ''
 
-const isDeck = name =>
-  fs.existsSync(path.join(DECKS_DIR, name, 'slides.md'))
+fs.mkdirSync(DIST, { recursive: true })
 
-const decks = fs
-  .readdirSync(DECKS_DIR)
-  .filter(d => fs.statSync(path.join(DECKS_DIR, d)).isDirectory())
-  .filter(isDeck)
+for (const deck of fs.readdirSync(DECKS_DIR)) {
+  const deckDir = path.join(DECKS_DIR, deck)
+  if (!fs.existsSync(path.join(deckDir, 'slides.md'))) continue
 
-for (const deck of decks) {
-  console.log(`Building ${deck}`)
   spawnSync(
     'npx',
-    ['slidev', 'build', '--base', `${repo}/${deck}/`],
+    [
+      'slidev',
+      'build',
+      '--base',
+      `${basePath}/${deck}/`,
+      '--out',
+      path.join(DIST, deck)
+    ],
     {
-      cwd: path.join(DECKS_DIR, deck),
+      cwd: deckDir,
       stdio: 'inherit',
       shell: true
     }
