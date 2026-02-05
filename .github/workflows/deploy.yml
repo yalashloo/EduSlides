@@ -1,10 +1,10 @@
 name: Deploy pages
 
 on:
-  workflow_dispatch: {}
   push:
     branches:
       - main
+  workflow_dispatch: {}
 
 jobs:
   deploy:
@@ -21,28 +21,32 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
-
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: lts/*
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Deck1
-        run: npm run build:deck1 -- --base /${{github.event.repository.name}}/deck1
-      
-      - name: Build Deck2
-        run: npm run build:deck2 -- --base /${{github.event.repository.name}}/deck2
-      
-      - name: Build Deck3
-        run: npm run build:deck3 -- --base /${{github.event.repository.name}}/deck3
-      
-      - name: Build Deck4
-        run: npm run build:deck4 -- --base /${{github.event.repository.name}}/deck4
+      - name: Generate decks metadata
+        run: node scripts/generate-decks.js
+
+      - name: Build Slidev decks
+        run: |
+          node scripts/build-all.js
+
+      - name: Build Vue gallery
+        run: |
+          cd app
+          npm install
+          npm run build
+          cd ..
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p dist
+          cp -r app/dist/* dist/
 
       - uses: actions/configure-pages@v4
 

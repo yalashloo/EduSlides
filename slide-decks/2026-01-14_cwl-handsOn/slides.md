@@ -1,7 +1,10 @@
 ---
 date: 2026-01-14
+title: CWL Demo
+description: Small hands-on demo to introduce wrapping a tool as CWL
+author: Dominik Brilhaus
+favicon: https://github.com/EduBricksHub/EduImages/blob/71326f568eebe51c90896ef418ca8632fa2bae36/logos/ceplas/CEPLAS_Icon.jpeg
 theme: ../../themes/hhu-ceplas
-# theme: ../../themes/dataplant-ceplas
 themeConfig:
   paginationX: l
   paginationY: b
@@ -14,9 +17,13 @@ fonts:
   sans: Gulim
 canvasWidth: 1200
 layout: cover
-author: Dominik Brilhaus
-src: ./bricks/00-title.md
 ---
+
+# CWL Demo
+
+## Wrapping the CommandLineTool FastQC
+
+Dominik Brilhaus
 
 
 ---
