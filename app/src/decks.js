@@ -5,6 +5,16 @@ const dev = import.meta.env.DEV
 
 export default [
   {
+    id: "2026-02-11_arcify",
+    title: "ARCify your research project",
+    description: "Introducing ARC with a hands-on demo.",
+    author: "Dominik Brilhaus",
+    date: "2026-02-11",
+    url: dev
+      ? "http://localhost:3034"
+      : "//2026-02-11_arcify/"
+  },
+  {
     id: "2026-01-14_cwl-handsOn",
     title: "CWL Demo",
     description: "Small hands-on demo to introduce wrapping a tool as CWL",

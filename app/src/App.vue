@@ -15,6 +15,8 @@ import decks from './decks'
         :key="deck.id"
         :href="deck.url"
         class="card"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <div class="card-body">
           <h2>{{ deck.title }}</h2>
