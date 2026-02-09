@@ -20,7 +20,8 @@
   max-height: 80%;
   object-fit: scale-down;
   overflow: clip;
-  margin: 40px 0px; /* Optional: add spacing around the image */
+  margin: 0px 0px; /* Optional: add spacing around the image */
+  margin-top: 40px;
 }
 
 /* Reset the text alignment to left */

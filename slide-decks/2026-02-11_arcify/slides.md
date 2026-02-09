@@ -4,7 +4,7 @@ coverDate: February 11th, 2026
 author: Dominik Brilhaus
 title: ARCify your research project
 description: Introducing ARC with a hands-on demo.
-theme: ../../themes/hhu-ceplas
+theme: ../../themes/dataplant-ceplas
 favicon: https://github.com/EduBricksHub/EduImages/blob/71326f568eebe51c90896ef418ca8632fa2bae36/logos/ceplas/CEPLAS_Icon.jpeg
 themeConfig:
   paginationX: r
@@ -30,7 +30,7 @@ src: '../../EduBricks-EduPaths/EduBricks/rdm-fair.md'
 ---
 
 ---
-src: '../../EduBricks-EduPaths/EduBricks/nfdi.md'
+src: ../../EduBricks-EduPaths/EduBricks/nfdi.md#1,2
 ---
 
 ---
@@ -39,10 +39,6 @@ src: '../../EduBricks-EduPaths/EduBricks/ceplas/ceplas-dataplant.md'
 
 ---
 src: '../../EduBricks-EduPaths/EduBricks/dataplant/dataplant-resources.md'
----
-
----
-src: '../../EduBricks-EduPaths/EduBricks/arc-intro/002-annotated-research-context.md'
 ---
 
 ---
@@ -71,4 +67,12 @@ src: './custom/acknowledgements.md'
 
 ---
 src: './custom/goals.md'
+---
+
+---
+src: custom/exercise-starthere-checkpoint-1.md
+---
+
+---
+src: custom/exercise-starthere-checkpoint-2.md
 ---
