@@ -16,7 +16,7 @@
         <TextWithOptionalLink :link="coverBackgroundSourceUrl" :text="coverBackgroundSource" />
       </div>
       <div class="flex items-center absolute right-10px bottom-10px">
-        <img style="height:40px;margin-right:10px" src='../assets/logos/ceplas-claim.png'/>
+        <img style="height:40px;margin-right:10px" src='../assets/logos/ceplas-claim.svg'/>
         <img style="height:100px" src='../assets/logos/hhu-horizontal.jpg'/>
       </div>
     </div>
