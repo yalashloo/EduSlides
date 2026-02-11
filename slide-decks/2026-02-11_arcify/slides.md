@@ -25,6 +25,12 @@ layout: cover
 
 Dominik Brilhaus, CEPLAS Data
 
+
+---
+src: ./custom/participants.md
+---
+
+
 ---
 src: '../../EduBricks-EduPaths/EduBricks/rdm-fair.md'
 ---
