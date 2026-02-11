@@ -74,6 +74,16 @@ Once added to the `main` branch, slide decks are deployed publicly on https://ed
 
 ## Setup
 
+### Install node.js
+
+This depends on [node.js](https://nodejs.org/en/download).
+
+### Clone this repository
+
+```bash
+git clone https://github.com/EduBricksHub/EduSlides.git
+```
+
 ### Git Submodule
 
 To include EduBricks as git submodule, use the following command to add it to your local clone:
@@ -90,7 +100,7 @@ npm install
 
 ### Watch a local preview of the slide deck gallery
 
-To watch the gallery with all slide decks, run `npm run start` and open `http://localhost:5173/`
+To watch the gallery with all slide decks, run `npm run start` and open `http://localhost:5173/`.
 
 
 ### Watch a single Slidev slide deck
