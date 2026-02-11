@@ -6,8 +6,8 @@ Please visit https://edubrickshub.github.io/EduSlides/ to find the example slide
 
 ## Idea
 
-- This repository handles slides and styles (no assets, no images) and renders the slide decks via [Slidev](https://sli.dev/)
-- Images can be handled and sourced from anywhere else (i.e. URLs) to keep this repo lightweight
+- This repository handles slides and styles (**no assets**, **no images**) and renders the slide decks via [Slidev](https://sli.dev/)
+- Images can be handled and sourced from anywhere else (i.e. URLs) to **keep this repo lightweight**
 - EduBricks & EduPaths are sourced as git submodule from https://github.com/EduBricksHub/EduBricks
 
 ## Contribution

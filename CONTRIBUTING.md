@@ -1,17 +1,30 @@
 # Contribution Guide
 
-## Git Submodule
+Please read the [README](README.md) for some general considerations and the idea.
 
-To include EduBricks as git submodule, use the following command to add it to your local clone:
+## Design in this repository
 
-```bash
-git submodule update --init --recursive
+This repo basically brings together slides and slide-decks (which themselves source images from elsewhere) and renders a single-page application (SPA).
+
+```yaml
+.
+├── app                    # <- the vue based SPA (i.e. the final website)
+├── CONTRIBUTING.md
+├── dist
+├── EduBricks-EduPaths     # <- git submodule of https://github.com/EduBricksHub/EduBricks-EduPaths
+├── LICENSE
+├── node_modules
+├── package-lock.json
+├── package.json
+├── README.md
+├── scripts                # <- scripts to take care of build logic and pulling metadata from slides.md YAML frontmatter
+├── slide-decks
+└── themes                 # <- themes for styling a slide deck
 ```
 
-### Design in this repository
+### Adding a new slide deck
 
-- [.bricks](bricks) = git submodule of https://github.com/EduBricksHub/EduBricks-EduPaths
-- [./slide-decks](slide-decks) = location to compile slide decks, typically: 
+To add a new slide deck, add a new subfolder to [./slide-decks](slide-decks) including a `slides.md`, e.g.:
 
 ```yaml
 slide-decks/<NameOfSlideDeck>
@@ -22,20 +35,23 @@ slide-decks/<NameOfSlideDeck>
 └── slides.md # = the slide deck to be rendered by slidev
 ```
 
+Note: Only slide decks **following exactly** this path and file name (`slides.md`) convention are automatically picked up.
+
+
 #### slides.md
 
 To compile slides from other slides, use this logic
 
 ```md
 ---
-src: 'path/to/slide'
+src: path/to/slide
 ---
 ```
 
 E.g.
 
 ---
-src: '../../EduBricks-EduPaths/EduBricks/my-brick.md'
+src: ../../EduBricks-EduPaths/EduBricks/my-brick.md
 ---
 
 
@@ -44,28 +60,9 @@ src: '../../EduBricks-EduPaths/EduBricks/my-brick.md'
 Due to the design of multi-layered source references, there's a risk of breaking links. To make sure, a (local) copy of a slide deck works as-is, export it to pdf... 
 
 
-## Deploy slide deck via GitHub Pages
+## Deploy slide deck via GitHub Pages (done automatically)
 
-To deploy the slide decks publicly on https://edubrickshub.github.io/slide-decks/, they are added to the npm scripts and github deploy workflow.
-
-1. Add a build script for that deck to the [package.json](package.json), e.g.
-  ```json
-  {
-  ...
-  "build:deckX": "slidev build --out ../../dist/deckX path/to/slides.md",
-  ...
-  }
-  ```
-
-2. Add to the respective build step to the [deploy.yml](.github/workflows/deploy.yml), e.g.
-
-  ```yml
-  - name: Build DeckX
-    run: npm run build:deckX -- --base /${{github.event.repository.name}}/deckX
-  ```
-
-3. (Optional:) Link the slide deck in the "front page" [index.html](dist/index.html)
-
+Once added to the `main` branch, slide decks are deployed publicly on https://edubrickshub.github.io/EduSlides/.
 
 ## Working with Slidev locally
 
@@ -75,13 +72,28 @@ To deploy the slide decks publicly on https://edubrickshub.github.io/slide-decks
 - There's a [vscode extension](https://sli.dev/features/vscode-extension) available
 - during watch or build it checks, that all referenced / reused images or imported bricks actually exist
 
-### Install Slidev
+## Setup
+
+### Git Submodule
+
+To include EduBricks as git submodule, use the following command to add it to your local clone:
+
+```bash
+git submodule update --init --recursive
+```
+
+### Install Slidev and other dependencies
 
 ```bash
 npm install
 ```
 
-### Watch a Slidev slide deck
+### Watch a local preview of the slide deck gallery
+
+To watch the gallery with all slide decks, run `npm run start` and open `http://localhost:5173/`
+
+
+### Watch a single Slidev slide deck
 
 You can see an example slide deck built with Slidev here using the following command. 
 This should open a browser with the presentation, including some presentation controls in the bottom-left corner.
