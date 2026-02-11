@@ -7,7 +7,8 @@ themeConfig:
   logoPagesDisabled: [ 1 ]
 date: 2026-02-11
 title: ARCify your research project
-description: Introducing ARC with a hands-on demo. 
+author: Dominik Brilhaus
+description: Introducing ARC with a hands-on demo.
 fonts:
   sans: Gulim
 canvasWidth: 1200
