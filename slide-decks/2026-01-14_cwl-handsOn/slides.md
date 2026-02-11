@@ -15,8 +15,13 @@ fonts:
 canvasWidth: 1200
 layout: cover
 author: Dominik Brilhaus
-src: ./bricks/00-title.md
 ---
+
+# CWL Demo
+
+## Wrapping the CommandLineTool FastQC
+
+Dominik Brilhaus
 
 
 ---

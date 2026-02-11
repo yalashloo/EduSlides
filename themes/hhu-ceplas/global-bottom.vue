@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 
 // Use Vite-compatible URLs so the bundler resolves assets correctly.
-const CEPLAS = new URL('./assets/logos/ceplas.jpeg', import.meta.url).href;
+const CEPLAS = new URL('./assets/logos/ceplas-logo.svg', import.meta.url).href;
 const HHU = new URL('./assets/logos/hhu.jpg', import.meta.url).href;
 
 const logos = ref([

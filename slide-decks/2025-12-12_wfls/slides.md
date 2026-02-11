@@ -13,15 +13,18 @@ addons:
 fonts:
   sans: Gulim
 canvasWidth: 1200
-layout: cover
 title: Computational Workflows
 author: Dominik Brilhaus
-src: ./bricks/00-title.md
+layout: cover
 ---
+
+# Computational Workflows
+
+Dominik Brilhaus
 
 
 ---
-src: ./bricks/01-goals.md
+src: ./custom/01-goals.md
 ---
 
 ---
@@ -138,5 +141,5 @@ src: ../../EduBricks-EduPaths/EduBricks/workflows/workflows-5S-method-06-summary
 ---
 
 ---
-src: ./bricks/02-acknowledgements.md
+src: ./custom/02-acknowledgements.md
 ---

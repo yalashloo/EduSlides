@@ -8,7 +8,7 @@ layout: four-panels
 
 <style>
   
-  p,ul {font-size:0.7em}
+  p,ul {font-size:0.6em}
 
 </style>
 
@@ -35,8 +35,9 @@ layout: four-panels
 
 **Team Jülich**
 
-- Stella Eggels
 - Angela Kranz
+- Kathryn Dumschott
+- Stella Eggels
 
 </div>
 

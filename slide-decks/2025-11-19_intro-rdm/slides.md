@@ -16,9 +16,11 @@ drawings:
   persist: false
 layout: cover
 author: Dominik Brilhaus
-src: './custom/00-title.md'
 ---
 
+# Intro to RDM
+
+## Example Slide Deck to show-case the Edu[Bricks|Paths] concept
 
 ---
 src: '../../EduBricks-EduPaths/EduPaths/data-life-cycle.md'

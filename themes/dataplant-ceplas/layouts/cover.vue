@@ -15,6 +15,10 @@
       <div class="absolute bottom-0 font-extralight mb-1 mr-2 right-0 text-xs" v-if="coverBackgroundSource">
         <TextWithOptionalLink :link="coverBackgroundSourceUrl" :text="coverBackgroundSource" />
       </div>
+      <div class="flex items-center absolute right-10px bottom-10px">
+        <img style="height:40px;margin-right:10px" src='../assets/logos/ceplas-claim.svg'/>
+        <img style="height:100px" src='../assets/logos/DataPLANT_logo_bg_transparent.svg'/>
+      </div>
     </div>
   </div>
 </template>
