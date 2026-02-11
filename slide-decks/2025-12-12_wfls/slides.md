@@ -1,7 +1,7 @@
 ---
 date: 2025-12-12
 theme: ../../themes/hhu-ceplas
-# theme: ../../themes/dataplant-ceplas
+description: Introduction to computational workflows; towards FAIRifying scripts.
 themeConfig:
   paginationX: l
   paginationY: b

@@ -1,20 +1,19 @@
 ---
-date: 2026-02-11
-coverDate: February 11th, 2026
-author: Dominik Brilhaus
-title: ARCify your research project
-description: Introducing ARC with a hands-on demo.
 theme: ../../themes/dataplant-ceplas
-favicon: https://github.com/EduBricksHub/EduImages/blob/71326f568eebe51c90896ef418ca8632fa2bae36/logos/ceplas/CEPLAS_Icon.jpeg
 themeConfig:
   paginationX: r
   paginationY: b
   paginationPagesDisabled: [ 1 ]
   logoPagesDisabled: [ 1 ]
+date: 2026-02-11
+title: ARCify your research project
+author: Dominik Brilhaus
+description: Introducing ARC with a hands-on demo.
 fonts:
   sans: Gulim
 canvasWidth: 1200
 transition: slide-left
+favicon: https://raw.githubusercontent.com/nfdi4plants/Branding/refs/heads/master/icons/DataPLANT/favicons/favicon_bg_darkblue.png
 drawings:
   enabled: true
   persist: false

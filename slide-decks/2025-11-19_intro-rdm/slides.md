@@ -5,6 +5,7 @@ themeConfig:
   paginationY: b
   paginationPagesDisabled: [ 1 ]
   logoPagesDisabled: [ 1 ]
+date: 2025-11-19
 coverDate: November 19th, 2025
 fonts:
   sans: Gulim
