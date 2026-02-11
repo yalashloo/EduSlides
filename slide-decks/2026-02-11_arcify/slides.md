@@ -23,16 +23,15 @@ layout: cover
 
 # ARCify your research project
 
-Dominik Brilhaus, CEPLAS Data
+Dominik Brilhaus, [CEPLAS Data](https://www.ceplas.eu/en/research/ceplas-data)
 
 
 ---
 src: ./custom/participants.md
 ---
 
-
 ---
-src: '../../EduBricks-EduPaths/EduBricks/rdm-fair.md'
+src: ../../EduBricks-EduPaths/EduBricks/rdm-fair.md#1,3
 ---
 
 ---
