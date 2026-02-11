@@ -17,13 +17,14 @@ favicon: https://raw.githubusercontent.com/nfdi4plants/Branding/refs/heads/maste
 drawings:
   enabled: true
   persist: false
-layout: cover
 author: Dominik Brilhaus
-src: './custom/00-title.md'
+layout: cover
 ---
 
+# Intro to ARC
+
 ---
-src: '../../EduBricks-EduPaths/EduBricks/002-annotated-research-context.md'
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/002-annotated-research-context.md'
 ---
 
 ---

@@ -17,14 +17,65 @@ drawings:
   enabled: true
   persist: false
 layout: cover
-author: Dominik Brilhaus
-src: './custom/00-title.md'
+---
+
+# ARCify your research project
+
+Dominik Brilhaus, [CEPLAS Data](https://www.ceplas.eu/en/research/ceplas-data)
+
+
+---
+src: ./custom/participants.md
 ---
 
 ---
-src: '../../EduBricks-EduPaths/EduBricks/002-annotated-research-context.md'
+src: ../../EduBricks-EduPaths/EduBricks/rdm-fair.md#1,3
+---
+
+---
+src: ../../EduBricks-EduPaths/EduBricks/nfdi.md#1,2
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/ceplas/ceplas-dataplant.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/dataplant/dataplant-resources.md'
 ---
 
 ---
 src: '../../EduBricks-EduPaths/EduPaths/arc-overview.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/001-arc-standards.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/dataplant/datahub-plantdatahub.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/ceplas/datahub-onpremise-hhu.md'
+---
+
+---
+src: '../../EduBricks-EduPaths/EduBricks/arc-intro/017-arc-ecosystem.md'
+---
+
+---
+src: './custom/acknowledgements.md'
+---
+
+---
+src: './custom/goals.md'
+---
+
+---
+src: custom/exercise-starthere-checkpoint-1.md
+---
+
+---
+src: custom/exercise-starthere-checkpoint-2.md
 ---

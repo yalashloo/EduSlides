@@ -1,23 +1,23 @@
 <script setup>
 import { ref } from 'vue';
 
-// Define image URLs and widths for the logos
+// Use Vite-compatible URLs so the bundler resolves assets correctly.
+const DATAPLANT = new URL('./assets/logos/DataPLANT_logo_bg_transparent.svg', import.meta.url).href;
+const CEPLAS = new URL('./assets/logos/ceplas-logo.svg', import.meta.url).href;
+
 const logos = ref([
-  { 
-    src: "https://raw.githubusercontent.com/nfdi4plants/Branding/7e7d442aafeaa767b9c14a63a16e459dadcbdaaf/logos/DataPLANT/DataPLANT_logo_square_bg_transparent.svg", 
-    alt: "DataPLANT Logo", 
-    width: 40 
+  {
+    src: DATAPLANT,
+    alt: 'DATAPLANT',
+    width: 40,
+    opacity: 0.8,
   },
   {
-    src: "https://raw.githubusercontent.com/EduBricksHub/images/a81d3e5f58edd27a559057f496b6ce043afb984e/ceplas/logos/CEPLAS_Icon.jpeg", 
-    alt: "CEPLAS Logo", 
-    width: 30 
+    src: CEPLAS,
+    alt: 'CEPLAS',
+    width: 30,
+    opacity: 0.8,
   },
-  // {
-  //   src: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg",
-  //   alt: "Creative Commons Logo",
-  //   width: 60
-  // }
 ]);
 </script>
 
@@ -32,7 +32,6 @@ const logos = ref([
 
 .logo {
   height: auto;
-  opacity: 0.6;
 }
 
 img {
@@ -54,7 +53,10 @@ img {
     :src="logo.src" 
     :alt="logo.alt" 
     class="logo" 
-    :style="{ width: logo.width + 'px' }" />
+    :style="{ 
+      width: logo.width + 'px',
+      opacity: logo.opacity,
+      }" />
   </div>
 </template>
 
