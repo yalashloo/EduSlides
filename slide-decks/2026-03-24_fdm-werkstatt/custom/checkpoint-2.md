@@ -1,4 +1,4 @@
-## Add an assay and share your ARC
+## Upload and share your ARC
 
 <br>
 <br>
@@ -10,5 +10,5 @@ Follow the [**Start Here** guide](https://nfdi4plants.github.io/nfdi4plants.know
 
 </AdmonitionType>
 
-Time: 30 minutes
+Time: 10 minutes
 

@@ -1,4 +1,4 @@
-## Start an ARC for your investigation with one study
+## Start an ARC for your investigation with adding study and assays
 
 <br>
 <br>
@@ -9,4 +9,4 @@ Follow the [**Start Here** guide](https://nfdi4plants.github.io/nfdi4plants.know
 
 </AdmonitionType>
 
-Time: 30 minutes
+Time: 50 minutes

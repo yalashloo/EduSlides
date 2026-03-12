@@ -9,8 +9,7 @@ layout: default
 
 - Get an idea of the ARC concept
 - Turn demo datasets into ARCs
-- Share them via the DataHUB
-- Introduction into elabFTW 
+- Upload and share them via the DataHUB
 - elab2ARC tool
 - Publish your ARC
 

@@ -38,6 +38,8 @@ layout: four-panels
 - Angela Kranz
 - Kathryn Dumschott
 - Stella Eggels
+- Xiaoran Zhou
+
 
 </div>
 
@@ -55,6 +57,6 @@ layout: four-panels
 
 ::bottom-right::
 
-<img style="height:70px;mr:50px;margin-bottom:20px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
+<img style="height:90px;mr:50px;margin-bottom:20px" src='https://www.sfb1535.hhu.de/fileadmin/redaktion/Fakultaeten/Mathematisch-Naturwissenschaftliche_Fakultaet/Biologie/SFB1535/Bilder/MibiNet.png'/>
 
-- Xiaoran Zhou
+
