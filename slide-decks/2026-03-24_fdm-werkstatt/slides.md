@@ -35,11 +35,11 @@ layout: cover
 
 
 ---
-src: './custom/participants.md'
+src: './custom/goals.md'
 ---
 
 ---
-src: './custom/goals.md'
+src: './custom/participants.md'
 ---
 
 ---
@@ -179,7 +179,7 @@ layout: default
 
 <img src="https://raw.githubusercontent.com/EduBricksHub/EduImages/1eaacfdc463867832a2f847a3da571f5cf2d2b11/screenshots/ontology-lookup-service.png" width="70%"/>
 
-Ontology Lookup Sevice (OLS): https://www.ebi.ac.uk/ols4/
+Ontology Lookup Service (OLS): https://www.ebi.ac.uk/ols4/
 
 ---
 layout: default
