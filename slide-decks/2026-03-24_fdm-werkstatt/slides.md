@@ -6,13 +6,14 @@ themeConfig:
   paginationPagesDisabled: [ 1 ]
   logoPagesDisabled: [ 1 ]
 date: 2026-03-24
-title: "Turning Research Projects into FAIR Digital Objects: a Hands-On Introduction to Annotated Research Contexts (ARCs) and ELN integration"
-author: 
-  - Yaser Alashloo, [CEPLAS Data](https://www.ceplas.eu/en/research/ceplas-data)
-  - Sabrina Zander, [MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03)
-  - Xiaoran Zhou, [Bioinformatik (IBG-4)](https://www.fz-juelich.de/de/ibg/ibg-4/forschung-1/omics-datenbasierte-bioinformatik/datenbanken-und-data-science-1)
-
-description: Introducing ARC with a hands-on demo.
+title: "Turning Research Projects into FAIR Digital Objects"
+author: "Yaser Alashloo, Sabrina Zander, Xiaoran Zhou"
+# TODO: Multi-line author is currently not supported by the simple SPA
+# author: |
+#   - Yaser Alashloo, [CEPLAS Data](https://www.ceplas.eu/en/research/ceplas-data)
+#   - Sabrina Zander, [MibiNet](https://www.sfb1535.hhu.de/projects/research-area-z/z03)
+#   - Xiaoran Zhou, [Bioinformatik (IBG-4)](https://www.fz-juelich.de/de/ibg/ibg-4/forschung-1/omics-datenbasierte-bioinformatik/datenbanken-und-data-science-1)
+description: a Hands-On Introduction to Annotated Research Contexts (ARCs) and ELN integration
 fonts:
   sans: Gulim
 canvasWidth: 1200
@@ -22,8 +23,8 @@ drawings:
   enabled: true
   persist: false
 layout: cover
-
 ---
+
 ## Turning Research Projects into FAIR Digital Objects: a Hands-On Introduction to Annotated Research Contexts (ARCs) and ELN integration
 
 <div class="mt-25">
