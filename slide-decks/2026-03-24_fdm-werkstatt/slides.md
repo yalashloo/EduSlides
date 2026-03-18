@@ -219,6 +219,12 @@ layout: two-columns
 - <span class="yellowblock"></span> Ecotype
   - <span class="blueblock"></span> Columbia
 
+
+
+---
+src: './custom/checkpoint-2.md'
+---
+
 ---
 layout: default
 ---
@@ -291,33 +297,14 @@ layout: two-columns
 
 
 ---
-layout: center
----
-
-## Check point 1
-
-<AdmonitionType type="task">
-
-✔︎ I’ve created an ARC for my project!  
-✔︎ I’ve added metadata about the overall investigation  
-✔︎ I’ve added a study for my samples
-<br>✔︎ I’ve added measurement data as an assay  
-
-</AdmonitionType>
-
-
----
-src: './custom/checkpoint-2.md'
----
-
----
-src: './custom/checkpoint-3.md'
----
-
----
 src: '../../EduBricks-EduPaths/EduBricks/elab2arc/elab2arc-connection.md'
 ---
 
 ---
 src: '../../EduBricks-EduPaths/EduBricks/elab2arc/elab2arc-mapping.md'
 ---
+
+---
+src: './custom/checkpoint-3.md'
+---
+

@@ -12,7 +12,7 @@ layout: default
 <div class="flex flex-col items-center mt-20">
 <div class="text-left text-xl w-full max-w-xl">
 
-<v-clicks>
+
 
 - My motivation / expectation
 - Operating system: Linux / Windows / Mac?
@@ -20,6 +20,6 @@ layout: default
 - Experience with Git / GitLab / GitHub?
 - My favorite experiment (lab / field / computational)
 
-</v-clicks>
+
 </div>
 </div>
