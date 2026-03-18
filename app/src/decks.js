@@ -5,63 +5,63 @@ const dev = import.meta.env.DEV
 
 export default [
   {
-    id: "2025-11-19_intro-rdm",
-    title: "2025-11-19_intro-rdm",
-    description: "",
+    id: "2026-03-24_fdm-werkstatt",
+    title: "Turning Research Projects into FAIR Digital Objects: a Hands-On Introduction to Annotated Research Contexts (ARCs) and ELN integration",
+    description: "Introducing ARC with a hands-on demo.",
     author: "Unknown",
-    date: "1970-01-01",
+    date: "2026-03-24",
     url: dev
-      ? "http://localhost:3030"
-      : "/2025-11-19_intro-rdm/"
-  },
-  {
-    id: "2025-12-04_arc",
-    title: "2025-12-04_arc",
-    description: "",
-    author: "Unknown",
-    date: "1970-01-01",
-    url: dev
-      ? "http://localhost:3031"
-      : "/2025-12-04_arc/"
-  },
-  {
-    id: "2025-12-12_wfls",
-    title: "2025-12-12_wfls",
-    description: "",
-    author: "Unknown",
-    date: "1970-01-01",
-    url: dev
-      ? "http://localhost:3032"
-      : "/2025-12-12_wfls/"
-  },
-  {
-    id: "2026-01-14_cwl-handsOn",
-    title: "2026-01-14_cwl-handsOn",
-    description: "",
-    author: "Unknown",
-    date: "1970-01-01",
-    url: dev
-      ? "http://localhost:3033"
-      : "/2026-01-14_cwl-handsOn/"
+      ? "http://localhost:3035"
+      : "/2026-03-24_fdm-werkstatt/"
   },
   {
     id: "2026-02-11_arcify",
-    title: "2026-02-11_arcify",
-    description: "",
-    author: "Unknown",
-    date: "1970-01-01",
+    title: "ARCify your research project",
+    description: "Introducing ARC with a hands-on demo.",
+    author: "Dominik Brilhaus",
+    date: "2026-02-11",
     url: dev
       ? "http://localhost:3034"
       : "/2026-02-11_arcify/"
   },
   {
-    id: "2026-03-24_fdm-werkstatt",
-    title: "2026-03-24_fdm-werkstatt",
-    description: "",
-    author: "Unknown",
-    date: "1970-01-01",
+    id: "2026-01-14_cwl-handsOn",
+    title: "CWL Demo",
+    description: "Small hands-on demo to introduce wrapping a tool as CWL",
+    author: "Dominik Brilhaus",
+    date: "2026-01-14",
     url: dev
-      ? "http://localhost:3035"
-      : "/2026-03-24_fdm-werkstatt/"
+      ? "http://localhost:3033"
+      : "/2026-01-14_cwl-handsOn/"
+  },
+  {
+    id: "2025-12-12_wfls",
+    title: "Computational Workflows",
+    description: "Introduction to computational workflows; towards FAIRifying scripts.",
+    author: "Dominik Brilhaus",
+    date: "2025-12-12",
+    url: dev
+      ? "http://localhost:3032"
+      : "/2025-12-12_wfls/"
+  },
+  {
+    id: "2025-12-04_arc",
+    title: "Intro to ARC",
+    description: "Introducing the Annotated Research Context (ARC)",
+    author: "Dominik Brilhaus",
+    date: "2025-12-04",
+    url: dev
+      ? "http://localhost:3031"
+      : "/2025-12-04_arc/"
+  },
+  {
+    id: "2025-11-19_intro-rdm",
+    title: "Intro to RDM",
+    description: "",
+    author: "Dominik Brilhaus",
+    date: "2025-11-19",
+    url: dev
+      ? "http://localhost:3030"
+      : "/2025-11-19_intro-rdm/"
   }
 ]
